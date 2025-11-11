@@ -1,0 +1,36 @@
+{
+    "name": "kc/database",
+    "description": "A modern PHP database operation class with elegant chain calling and security features",
+    "type": "library",
+    "keywords": ["database", "pdo", "mysql", "orm", "php"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "KC",
+            "email": "admin@ab.cd"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "ext-pdo": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kc\\Database\\": "database/src/"
+        },
+        "files": [
+            "database/src/functions.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Kc\\Database\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "scripts": {
+        "test": "phpunit tests/"
+    }
+}
